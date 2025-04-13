@@ -6,11 +6,28 @@
     <title>My GitHub Repositories</title>
     <!-- Include Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-image: url('background.png'); /* Replace with the relative path to your local image */
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #fff; /* Ensures text is readable on a dark background */
+        }
+        .container {
+            background-color: rgba(0, 0, 0, 0.7); /* Adds a semi-transparent background to the content */
+            padding: 20px;
+            border-radius: 10px;
+        }
+        a {
+            color: #0d6efd; /* Ensures links are visible */
+        }
+    </style>
 </head>
 <body>
     <div class="container text-center mt-5">
         <h1 class="mb-4">Project Portfolio</h1>
-        <p>Welcome! This page highlights my key software projects with it's names and short descriptions. 
+        <p>Welcome! This page highlights my key software projects with their names and short descriptions. 
         <br>Each project showcases my skills in development, problem-solving, and real-world application.</p>
 
         <!-- Responsive Table -->
@@ -24,8 +41,12 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td><a href="https://github.com/200566998Shrasthkumar/Exploring-and-Predicting-Rail-Occurrences-in-Canada">Canadian Rail Safety</a></td>
-                        <td>This project provides insights into railway accidents, incidents, and operational statistics across Canada.</td>
+                        <td class="text-center align-middle">
+                            <a href="https://github.com/200566998Shrasthkumar/Exploring-and-Predicting-Rail-Occurrences-in-Canada" class="text-decoration-none">
+                                Canadian Rail Safety
+                            </a>
+                        </td>
+                        <td class="align-middle">This project provides insights into railway accidents, incidents, and operational statistics across Canada.</td>
                     </tr>
                 </tbody>
             </table>
